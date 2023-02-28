@@ -24,7 +24,7 @@
       <form action="#" th:action="@{/rand/generate}" th:object="${generateObject}" method="GET">
         <p>
           <input type="text" th:field="*{numberVal}" />
-          <input type="button" value="Generate" />
+          <input type="submit" value="Generate" />
         </p>
       </form>
     </main>

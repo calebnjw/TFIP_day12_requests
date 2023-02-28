@@ -33,8 +33,8 @@ public class GenerateRandomController {
   }
 
   public void randomiseNumber(Model m, int numGen) {
-    int maxGen = 30;
-    String[] numImages = new String[maxGen + 1];
+    int maxGen = 31; // 0 to 30 is 31 numbers
+    String[] numImages = new String[maxGen];
 
     if (numGen < 1 || numGen > maxGen) {
       throw new RandomNumberException();

@@ -24,7 +24,8 @@
         <h1>You wanted <span data-th-text="${randomNumCount}"></span> random numbers.</h1>
         <div class="row row-cols-1 row-cols-md-5 g-4">
           <div class="card mx-2" data-th-each="imageName: ${randomNumResult}">
-            <img data-th-src="@{'/images/'+${imageName}}" alt="" />
+            <img data-th-src="@{${'/images/' + imageName}}" alt="" />
+            <!-- can also do it this way: @{'/images/' + ${imageName}} -->
             <div class="card-body">
               <caption data-th-text="${imageName}"></caption>
             </div>
